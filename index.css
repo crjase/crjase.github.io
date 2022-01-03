@@ -65,7 +65,7 @@ div#mcserver h2:nth-child(2) {
 }
 
 body {
-    background-image: url('background.jpg'); /* Image by https://wallpapercave.com/w/wp4813098 */
+    background-image: url('Storage/background.jpg'); /* Image by https://wallpapercave.com/w/wp4813098 */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
