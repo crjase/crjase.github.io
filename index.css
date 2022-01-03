@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+* {box-sizing:border-box;margin: 0;padding: 0;font-family:Century Gothic ;}
+#title {
+    color: black;
+    -webkit-text-fill-color: orange;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+#mcserver {
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 14px;
+    display: inline-flex;
+
+}
+header{width:100%;z-index:1000000;transition:0.6s;position:fixed;top:0;left:0;display: flex;justify-content: space-between;align-items: center;padding: 30px 100px; }
+header ul{display: flex ;position: relative;justify-content: right;align-items: right;}
+header ul li{
+position: flex ;list-style: none;
+}
+header ul li a{
+    border-radius: 5px;
+position: relative;
+padding:6px 5px;
+margin:5px 5px;
+text-decoration: none;
+color: white;
+font-weight:500px !important;
+transition:0.6s;
+font-family: 'Poppins', sans-serif!important;
+}
+main{margin-top: 18vh;}
+header ul li a:hover{background-color: white;color:black;}
+header .logo{font-family: 'Poppins', sans-serif!important;position:flex ;font-weight: 700;font-size:larger;color: #fff;text-decoration: none;text-transform: uppercase;letter-spacing: 2px;}
+header.sticky{transition:0.6s;padding:8px 100px;background: linear-gradient(rgba(0, 0, 0, 0.110), rgba(0, 0, 0, 0.110)), #2e2e2ec9;}
+#pagesandlinks {
+    color: white;
+    text-decoration: underline;
+}
+.hoverbtn{
+    border-radius: 5px;
+    position: relative;
+    padding:6px 5px;
+    margin:5px 5px;
+    text-decoration: none;
+    color: white;
+    font-weight:500px !important;
+    transition:0.6s;
+    font-family: 'Poppins', sans-serif!important;
+}
+.hoverbtn:hover{
+    background-color: white;color:black;
+}
+.ShouldBeCenter {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Adds a bit of space into the text in between */
+div#mcserver h2:nth-child(2) {
+	margin-left: 10px;
+}
+
+body {
+    background-image: url('background.jpg'); /* Image by https://wallpapercave.com/w/wp4813098 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
