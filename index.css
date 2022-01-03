@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 * {box-sizing:border-box;margin: 0;padding: 0;font-family:Century Gothic ;}
 #title {
+    font: Poppins!important;
     color: black;
     -webkit-text-fill-color: orange;
     -webkit-text-stroke-width: 1px;
@@ -19,6 +20,9 @@ header{width:100%;z-index:1000000;transition:0.6s;position:fixed;top:0;left:0;di
 header ul{display: flex ;position: relative;justify-content: right;align-items: right;}
 header ul li{
 position: flex ;list-style: none;
+}
+.footer{
+    font: Poppins;color:whitesmoke;
 }
 header ul li a{
     border-radius: 5px;
