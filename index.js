@@ -6,7 +6,7 @@ function show_img(src, width, height, alt) {
     img.height = height
     img.alt = alt
 
-    document.body.appendChild(img);
+    document.getElementById("center").appendChild(img);
 };
 
 // Create rickroll button
