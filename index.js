@@ -15,12 +15,13 @@ function show_img(src, width, height, alt) {
 function officially_rolled() {
     let h1 = document.createElement('h1')
     let img = document.createElement('img')
-    h1.textContent = 'LOOK WHAT YOU\'VE DONE'
+    h1.textContent = 'ABSOLUTE RICK ROLL'
     h1.style = "color:whitesmoke;"
     img.src="Storage/rick.gif"
-    img.width = 100
-    img.height = 200
+    img.width = 1000
+    img.height = 1000
     img.alt = 'trolled'
+    document.body.style.backgroundImage = "url('Storage/rick_background.png')";
     document.getElementById("center").appendChild(h1);
     document.getElementById("center").appendChild(img);
 }
@@ -47,7 +48,7 @@ rickroll_button.addEventListener("click", function () {
             'alt text'
         )
     } else {
-        alert('You have rick rolled yourself too many times! PLEASE, stop, for the greater good of your mental state')
+        alert('Are you sure about this one, last... buton?')
     
         // Remove 'rick astley' button
         document.getElementById('rickroll_button').remove();
@@ -64,7 +65,7 @@ rickroll_button.addEventListener("click", function () {
                // re-create <center>
                let center = document.createElement('center');
                center.setAttribute('id', 'center');
-               document.getElementsByTagName('main')[0].appendChild(center) // needs fixing later
+               document.getElementsByTagName('main')[0].appendChild(center)
                // one, last roll...
                officially_rolled()
            });
@@ -74,41 +75,3 @@ rickroll_button.addEventListener("click", function () {
 document.getElementById("center").appendChild(rickroll_button)
 document.getElementById("center").appendChild(bre1);
 document.getElementById("center").appendChild(bre2);
-
-/* Thank you
-
-let rickroll_button = document.createElement("button");
-rickroll_button.id = "rickroll_button";
-rickroll_button.name = "Rick Astley";
-rickroll_button.innerHTML = "Rick Astley";
-rickroll_button.type = "submit";
-rickroll_button.addEventListener("click", onRickrollClicked);
-
-function onRickrollClicked() {
-    if (rolled < 4) {
-        console.log('Successfully Rick Rolled', rolled, 'Times')
-        rolled += 1
-
-        show_img(
-            rel = "Storage/rick.gif",
-            400, 250,
-            'alt text'
-        )
-    } else {
-        alert('You have rick rolled yourself too many times! PLEASE, stop, for the greater good of your mental state')
-    
-        let more_rolls = document.getElementById('rickroll_button');
-        more_rolls.removeEventListener(onRickrollClicked);
-
-        // Replace 'rick astley' button with 'give me more rolls' button
-        more_rolls.id = 'more_rolls'
-        more_rolls.name = 'more_rolls'
-        more_rolls.innerHTML = 'GIVE ME MORE RICK ROLES'
-        more_rolls.addEventListener('click', function () {
-            alert('this button is working :D')
-        });
-        
-        document.getElementById("center").appendChild(more_rolls)
-    }
-}
-*/
