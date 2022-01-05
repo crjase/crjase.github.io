@@ -1,0 +1,18 @@
+/* This is self explanitory */
+body {
+    background-color: #070014f8;
+    color: whitesmoke;
+}
+
+/* Textbox */
+#textbox {
+    width: 800px;
+    height: 400px;
+    background-color: #070014f8;
+    color: whitesmoke;
+    border-top-style: groove;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    resize: none;
+}
